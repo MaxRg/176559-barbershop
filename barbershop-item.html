@@ -3,40 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>Набор для путешествий</title>
+    <link rel="stylesheet" href="#">
   </head>
   <body>
 <header class="main-heider">
-  <div class="heider-container"> <!--Сначала сделал логотип в шапке и навигацию в разных div, но потом решил объединить их в один div, так как посчитал одного nav достаточно для главного меню. Верно или нет?-->
+  <div class="main-heider-centerblock centerblock">
     <a href="index.html" class="main-heider-logo">
       <img src="http://placehold.it/150x100" width="150" height="100" alt="Переход на главную страницу">
     </a>
     <nav class="main-heider-navigation">
       <ul>
         <li>
-          <a href="#">Информация</a>
+          <a href="#" class="main-heider-btn">Информация</a>
         </li>
           <li>
-          <a href="#">Новости</a>
+          <a href="#" class="main-heider-btn">Новости</a>
         </li>
           <li>
-          <a href="#">Прайс-лист</a>
+          <a href="#" class="main-heider-btn">Прайс-лист</a>
         </li>
           <li>
-          <a href="#">Магазин</a>
+          <a href="#" class="main-heider-btn">Магазин</a>
         </li>
           <li>
-          <a href="#">Контакты</a>
+          <a href="#" class="main-heider-btn">Контакты</a>
         </li>
       </ul>
     </nav>
-  </div>
   <div class="main-heider-user-block">
-    <a class="login" href="#">Вход</a>
+    <a class="login main-heider-btn" href="#">Вход</a><!--Я добавил сюда такой же класс как и в ссылки выше, ведь кнопки одинаково стилизоваться будут. Верно?-->
+  </div>
   </div>
 </header>
-<main class="main-container">
+<main class="main-container centerblock">
   <div class="main-container-top">
-    <h1>Набор для путешествий "BAXTER OF CALIFORNIA"</h1>
+    <h1 class="main-container-h1">Набор для путешествий "BAXTER OF CALIFORNIA"</h1>
     <nav class="main-container-breadcrumbs">
       <ul>
         <li>
@@ -57,41 +58,43 @@
   <div class="features">
     <div class="features-left">
       <div class="features-left-main-foto">
-      <img src="http://placehold.it/150x100" width="150" height="100" alt="Набор для путешествий BAXTER OF CALIFORNIA">
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Набор для путешествий BAXTER OF CALIFORNIA">
       </div>
-      <figure class="features-left-gallery">
-        <img src="http://placehold.it/150x100" width="150" height="100" alt="Набор для путешествий BAXTER OF CALIFORNIA">
-        <img src="http://placehold.it/150x100" width="150" height="100" alt="Набор для путешествий BAXTER OF CALIFORNIA">
-        <img src="http://placehold.it/150x100" width="150" height="100" alt="Набор для путешествий BAXTER OF CALIFORNIA">
-      </figure>
+      <div class="features-left-gallery">
+        <figure>
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Набор для путешествий BAXTER OF CALIFORNIA">
+        </figure>
+        <figure>
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Набор для путешествий BAXTER OF CALIFORNIA">
+        </figure>
+        <figure>
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Набор для путешествий BAXTER OF CALIFORNIA">
+        </figure>
+      </div>
     </div>
     <div class="features-right">
-        <p class="features-right-title name">Есть в наличии</p>
-        <p class="features-right-article name">Артикул</p>
-        <p class="features-right-main-content">Travel kit - необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или одыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
-        <div class="features-right-cost"><!--Не знаю как лучше разметить этот блок-->
-          <ul>
-            <li class="features-right-cost"> 2 900 руб.</li>
-            <li class="btn features-right-buy">
-              <a href="#">Купить</a>
-            </li>
-          </ul>
-        </div>
-        <div class="features-right-description">
-            <h2 class="features-right-description-title">В набор входят:</h2>
-            <ul class="features-right-description-list">
-              <li>Средство для умывания (50мл)</li>
-              <li>Увлажняющий крем (50 мл)</li>
-              <li>Крем для бритья (50 мл)</li>
-              <li>Крем после бритья, шампунь (50 мл)</li>
-              <li>Удобная косметичка</li>
-            </ul>
-        </div>
+      <p class="features-right-title name">Есть в наличии</p>
+      <p class="features-right-article name">Артикул</p>
+      <p class="features-right-main-content">Travel kit - необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или одыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+      <div class="features-right-cost">
+        <span class="features-right-cost"> 2 900 руб.</span>
+        <a href="#" class="btn features-right-buy">Купить</a>
+      </div>
+      <div class="features-right-description">
+        <h2 class="features-right-description-title">В набор входят:</h2>
+        <ul class="features-right-description-list">
+          <li>Средство для умывания (50мл)</li>
+          <li>Увлажняющий крем (50 мл)</li>
+          <li>Крем для бритья (50 мл)</li>
+          <li>Крем после бритья, шампунь (50 мл)</li>
+          <li>Удобная косметичка</li>
+        </ul>
+      </div>
     </div>
   </div>
 </main>
   <footer class="main-footer">
-    <div class="footer-container">
+    <div class="main-footer-centerblock centerblock">
         <section class="footer-contacts">
           Барбершоп «Бородинский»<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
@@ -109,6 +112,7 @@
           <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
         </section>
       </div>  
-    </footer>
+  </footer>
+  <script src="#"></script>
   </body>
 </html>

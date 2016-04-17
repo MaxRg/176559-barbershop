@@ -3,47 +3,48 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
+    <link rel="stylesheet" href="#">
   </head>
   <body>
 <header class="main-heider">
-  <div class="heider-container"> <!--Сначала сделал логотип в шапке и навигацию в разных div, но потом решил объединить их в один div, так как посчитал одного nav достаточно для главного меню. Верно или нет?-->
+  <div class="main-heider-centerblock centerblock">
     <a href="index.html" class="main-heider-logo">
       <img src="http://placehold.it/150x100" width="150" height="100" alt="Переход на главную страницу">
     </a>
     <nav class="main-heider-navigation">
       <ul>
         <li>
-          <a href="#">Информация</a>
+          <a href="#" class="main-heider-btn">Информация</a>
         </li>
           <li>
-          <a href="#">Новости</a>
+          <a href="#" class="main-heider-btn">Новости</a>
         </li>
           <li>
-          <a href="#">Прайс-лист</a>
+          <a href="#" class="main-heider-btn">Прайс-лист</a>
         </li>
           <li>
-          <a href="#">Магазин</a>
+          <a href="#" class="main-heider-btn">Магазин</a>
         </li>
           <li>
-          <a href="#">Контакты</a>
+          <a href="#" class="main-heider-btn">Контакты</a>
         </li>
       </ul>
     </nav>
-  </div>
   <div class="main-heider-user-block">
-    <a class="login" href="#">Вход</a>
+    <a class="login main-heider-btn" href="#">Вход</a><!--Я добавил сюда такой же класс как и в ссылки выше, ведь кнопки одинаково стилизоваться будут. Верно?-->
+  </div>
   </div>
 </header>
-<main class="main-container">
-  <div class="main-container-top">
-    <h1>Средства для ухода</h1>
+<main class="main-container centerblock">
+    <div class="main-container-top">
+    <h1 class="main-container-h1">Средства для ухода</h1>
     <nav class="main-container-breadcrumbs">
       <ul>
         <li>
-          <a href="#">Главная</a>
+          <a href="#" class="breadcrumbs-btn">Главная</a>
         </li>
         <li>
-          <a href="#">Магазин</a>
+          <a href="#" class="breadcrumbs-btn">Магазин</a>
         </li>
         <li>
         Средства для ухода
@@ -54,154 +55,131 @@
   <div class="features">
     <div class="features-left">
       <form action="#" method="get">
-        <h2 class="features-left-vendors">Производители</h2>
-          <input type="checkbox" name="baxter-of-california" id="baxter-of-california" checked>
-          <label for="baxter-of-california">Baxter of California</label>
-          <input type="checkbox" name="mr-natty" id="mr-natty">
-          <label for="mr-natty">Mr Natty</label>
-          <input type="checkbox" name="suavecito" id="suavecito" checked>
-          <label for="suavecito">Suavecito</label>
-          <input type="checkbox" name="malin-goetz" id="malin-goetz">
-          <label for="malin-goetz">Malin+Goetz</label>
-          <input type="checkbox" name="murrays" id="murrays">
-          <label for="murrays">Murray's</label>
-          <input type="checkbox" name="american-crew" id="american-crew" checked>
-          <label for="american-crew">American crew</label>
-        <h2 class="features-left-goods">Группы товаров:</h2>
-          <input type="radio" name="group-goods" value="razor" id="razor">
-          <label for="razor">Бритвенные принадлежности</label>
-          <input type="radio" name="group-goods" value="care" id="care" checked>
-          <label for="care">Средства для ухода</label>
-          <input type="radio" name="group-goods" value="accessory" id="accessory">
-          <label for="accessory">Аксессуары</label>
-        <a href="#" class="btn show">
-            Показать
-        </a>
+        <fieldset>
+          <legend class="features-left-vendors">Производители</legend>
+            <input type="checkbox" name="baxter-of-california" id="baxter-of-california" checked>
+            <label for="baxter-of-california">Baxter of California</label>
+            <input type="checkbox" name="mr-natty" id="mr-natty">
+            <label for="mr-natty">Mr Natty</label>
+            <input type="checkbox" name="suavecito" id="suavecito" checked>
+            <label for="suavecito">Suavecito</label>
+            <input type="checkbox" name="malin-goetz" id="malin-goetz">
+            <label for="malin-goetz">Malin+Goetz</label>
+            <input type="checkbox" name="murrays" id="murrays">
+            <label for="murrays">Murray's</label>
+            <input type="checkbox" name="american-crew" id="american-crew" checked>
+            <label for="american-crew">American crew</label>
+        </fieldset>
+        <fieldset>
+          <legend class="features-left-goods">Группы товаров:</legend>
+            <input type="radio" name="group-goods" value="razor" id="razor">
+            <label for="razor">Бритвенные принадлежности</label>
+            <input type="radio" name="group-goods" value="care" id="care" checked>
+            <label for="care">Средства для ухода</label>
+            <input type="radio" name="group-goods" value="accessory" id="accessory">
+            <label for="accessory">Аксессуары</label>
+        </fieldset>
+        <input type="submit" value="Показать">
       </form>
     </div>
-    <div class="featues-right"><!--Не знаю как выполнить требование спецификации: "Количество товаров в правом блоке может быть любым, оно не должно ломать страницу"-->
-      <article class="featues-right-1-goods">
+    <div class="featues-right">
+      <article class="featues-right-goods">
         <a href="#" class="featues-right-img">
           <img src="http://placehold.it/150x100" width="150" height="100" alt="Набор для путешествий Baxter of California">
         </a>
         <a href="#" class="featues-right-name">Набор для путешествий "Baxter of California"</a>
-        <div class="features-right-purchase"><!--Не знаю как лучше разметить этот блок-->
-          <ul>
-            <li class="featues-right-goods-cost"> 2 900 руб.</li>
-            <li class="btn featues-right-goods-buy">
-              <a href="#">Купить</a>
-            </li>
-          </ul>
+        <div class="features-right-purchase">
+          <span class="featues-right-goods-cost"> 2 900 руб.</span>
+          <a href="#" class="btn featues-right-goods-buy">Купить</a>
         </div>     
       </article>
-      <article class="featues-right-2-goods">
+      <article class="featues-right-goods">
         <a href="#" class="featues-right-img">
           <img src="http://placehold.it/150x100" width="150" height="100" alt="Увлажняющий кондиционер Baxter of California">
         </a>
         <a href="#" class="featues-right-name">Увлажняющий кондиционер "Baxter of California"</a>
         <div class="features-right-purchase">
-          <ul>
-            <li class="featues-right-goods-cost"> 750 руб.</li>
-            <li class="btn featues-right-goods-buy">
-              <a href="#">Купить</a>
-            </li>
-          </ul>
+          <span class="featues-right-goods-cost"> 750 руб.</span>
+          <a href="#" class="btn featues-right-goods-buy">Купить</a>
         </div>
       </article>
-      <article class="featues-right-3-goods">
+      <article class="featues-right-goods">
         <a href="#" class="featues-right-img">
           <img src="http://placehold.it/150x100" width="150" height="100" alt="Гель для волос Suavecito">
         </a>
         <a href="#" class="featues-right-name">Гель для волос "Suavecito"</a>
         <div class="features-right-purchase">
-          <ul>
-            <li class="featues-right-goods-cost"> 290 руб.</li>
-            <li class="btn featues-right-goods-buy">
-              <a href="#">Купить</a>
-            </li>
-          </ul>
+          <span class="featues-right-goods-cost"> 290 руб.</span>
+          <a href="#" class="btn featues-right-goods-buy">Купить</a>
         </div>
       </article>
-      <article class="featues-right-4-goods">
+      <article class="featues-right-goods">
         <a href="#" class="featues-right-img">
           <img src="http://placehold.it/150x100" width="150" height="100" alt="Глина для укладки волос American crew">
         </a>
         <a href="#" class="featues-right-name">Глина для укладки волос "American crew"</a>
         <div class="features-right-purchase">
-          <ul>
-            <li class="featues-right-goods-cost"> 500 руб.</li>
-            <li class="btn featues-right-goods-buy">
-              <a href="#">Купить</a>
-            </li>
-          </ul>
+          <span class="featues-right-goods-cost"> 500 руб.</span>
+          <a href="#" class="btn featues-right-goods-buy">Купить</a>
         </div>
       </article>
-      <article class="featues-right-5-goods">
+      <article class="featues-right-goods">
         <a href="#" class="featues-right-img">
           <img src="http://placehold.it/150x100" width="150" height="100" alt="Гель для волос American crew">
         </a>
         <a href="#" class="featues-right-name">Гель для волос "American crew"</a>
         <div class="features-right-purchase">
-          <ul>
-            <li class="featues-right-goods-cost"> 300 руб.</li>
-            <li class="btn featues-right-goods-buy">
-              <a href="#">Купить</a>
-            </li>
-          </ul>
+          <span class="featues-right-goods-cost"> 300 руб.</span>
+          <a href="#" class="btn featues-right-goods-buy">Купить</a>
         </div>
       </article>
-      <article class="featues-right-6-goods">
+      <article class="featues-right-goods">
         <a href="#" class="featues-right-img">
           <img src="http://placehold.it/150x100" width="150" height="100" alt="Набор ждя бритья Baxter of California">
         </a>
         <a href="#" class="featues-right-name">Набор ждя бритья "Baxter of California"</a>
         <div class="features-right-purchase">
-          <ul>
-            <li class="featues-right-goods-cost"> 3 900 руб.</li>
-            <li class="btn featues-right-goods-buy">
-              <a href="#">Купить</a>
-            </li>
-          </ul>
+          <span class="featues-right-goods-cost"> 3 900 руб.</span>
+          <a href="#" class="btn featues-right-goods-buy">Купить</a>
         </div>
       </article>
-      <div class="featues-right-pages">
-        <ul>
+        <ul class="pagination">
           <li>
-            <a href="#">1</a>
+            <a href="#" class="featues-pages-btn">1</a>
           </li>
           <li>
-            <a href="#">2</a>
+            <a href="#" class="featues-pages-btn">2</a>
           </li>
           <li>
-            <a href="#">3</a>
+            <a href="#" class="featues-pages-btn">3</a>
           </li>
           <li>
-            <a href="#">4</a>
+            <a href="#" class="featues-pages-btn">4</a>
           </li>
-        </ul>  
-      </div>
+        </ul>
     </div>
   </div>
 </main>
 <footer class="main-footer">
-    <div class="footer-container">
-        <section class="footer-contacts">
-          Барбершоп «Бородинский»<br>
-          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-          <a href="#">Как нас найти?</a><br>
-          Телефон: +7 (812) 666-02-66
-        </section>
-        <section class="footer-social">
-          <p>Давайте дружить!</p>
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-        </section>
-        <section class="footer-copyright">
-          <p>Разработано:</p>
-          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-        </section>
-      </div>  
-  </footer>
-  </body>
+  <div class="main-footer-centerblock centerblock">
+    <section class="footer-contacts">
+      Барбершоп «Бородинский»<br>
+      Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+      <a href="#">Как нас найти?</a><br>
+      Телефон: +7 (812) 666-02-66
+    </section>
+    <section class="footer-social">
+      <p>Давайте дружить!</p>
+      <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+      <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+      <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+    </section>
+    <section class="footer-copyright">
+      <p>Разработано:</p>
+      <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+    </section>
+  </div>  
+</footer>
+<script src="#"></script>
+</body>
 </html>
