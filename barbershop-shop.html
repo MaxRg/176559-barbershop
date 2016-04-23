@@ -3,40 +3,42 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
-    <link rel="stylesheet" href="#">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 <header class="main-heider">
-  <div class="main-heider-centerblock centerblock">
-    <a href="index.html" class="main-heider-logo">
-      <img src="img/heider-logo.png" width="150" height="100" alt="Переход на главную страницу">
+  <div class="heider-centerblock centerblock clearfix">
+    <div class="main-heider-navigation">
+    <a href="index.html" class="heider-logo">
+      <img src="img/heider-logo.png" width="111" height="24" alt="Переход на главную страницу">
     </a>
-    <nav class="main-heider-navigation">
+    <nav class="heider-navigation clearfix">
       <ul>
         <li>
-          <a href="#" class="main-heider-btn">Информация</a>
+          <a href="#" class="heider-btn">Информация</a>
         </li>
           <li>
-          <a href="#" class="main-heider-btn">Новости</a>
+          <a href="#" class="heider-btn">Новости</a>
         </li>
           <li>
-          <a href="#" class="main-heider-btn">Прайс-лист</a>
+          <a href="#" class="heider-btn">Прайс-лист</a>
         </li>
           <li>
-          <a href="#" class="main-heider-btn">Магазин</a>
+          <a href="#" class="heider-btn">Магазин</a>
         </li>
           <li>
-          <a href="#" class="main-heider-btn">Контакты</a>
+          <a href="#" class="heider-btn">Контакты</a>
         </li>
       </ul>
     </nav>
-  <div class="main-heider-user-block">
-    <a class="login main-heider-btn" href="#">Вход</a><!--Я добавил сюда такой же класс как и в ссылки выше, ведь кнопки одинаково стилизоваться будут. Верно?-->
+  </div>
+  <div class="heider-user-block">
+    <a class="login heider-btn" href="#">Вход</a>
   </div>
   </div>
 </header>
 <main class="main-container centerblock">
-    <div class="main-container-top">
+    <div class="main-container-top clearfix">
     <h1 class="main-container-h1">Средства для ухода</h1>
       <ul class="main-container-breadcrumbs">
         <li>
@@ -50,91 +52,91 @@
         </li>
       </ul>
   </div>
-  <div class="features">
-      <form action="#" method="get" class="features-left">
-        <fieldset>
-          <legend class="features-left-goods">Производители</legend>
-            <input type="checkbox" name="baxter-of-california" id="baxter-of-california" checked>
-            <label for="baxter-of-california">Baxter of California</label>
-            <input type="checkbox" name="mr-natty" id="mr-natty">
-            <label for="mr-natty">Mr Natty</label>
-            <input type="checkbox" name="suavecito" id="suavecito" checked>
-            <label for="suavecito">Suavecito</label>
-            <input type="checkbox" name="malin-goetz" id="malin-goetz">
-            <label for="malin-goetz">Malin+Goetz</label>
-            <input type="checkbox" name="murrays" id="murrays">
-            <label for="murrays">Murray's</label>
-            <input type="checkbox" name="american-crew" id="american-crew" checked>
-            <label for="american-crew">American crew</label>
+  <div class="features clearfix">
+      <form action="#" method="get" class="features-left-shop">
+        <fieldset class="features-left-goods">
+          <legend class="features-left-title">Производители</legend>
+          <input type="checkbox" name="baxter-of-california" id="baxter-of-california" checked>
+          <label for="baxter-of-california">Baxter of California</label>
+          <input type="checkbox" name="mr-natty" id="mr-natty" class="filter">
+          <label for="mr-natty">Mr Natty</label>
+          <input type="checkbox" name="suavecito" id="suavecito" checked>
+          <label for="suavecito">Suavecito</label>
+          <input type="checkbox" name="malin-goetz" id="malin-goetz">
+          <label for="malin-goetz">Malin+Goetz</label>
+          <input type="checkbox" name="murrays" id="murrays">
+          <label for="murrays">Murray's</label>
+          <input type="checkbox" name="american-crew" id="american-crew" checked>
+          <label for="american-crew">American crew</label>
         </fieldset>
-        <fieldset>
-          <legend class="features-left-goods">Группы товаров:</legend>
-            <input type="radio" name="group-goods" value="razor" id="razor">
-            <label for="razor">Бритвенные принадлежности</label>
-            <input type="radio" name="group-goods" value="care" id="care" checked>
-            <label for="care">Средства для ухода</label>
-            <input type="radio" name="group-goods" value="accessory" id="accessory">
-            <label for="accessory">Аксессуары</label>
+        <fieldset class="features-left-goods">
+          <legend class="features-left-title">Группы товаров:</legend>
+          <input type="radio" name="group-goods" value="razor" id="razor">
+          <label for="razor">Бритвенные принадлежности</label>
+          <input type="radio" name="group-goods" value="care" id="care" checked>
+          <label for="care">Средства для ухода</label>
+          <input type="radio" name="group-goods" value="accessory" id="accessory">
+          <label for="accessory">Аксессуары</label>
         </fieldset>
         <input type="submit" value="Показать">
       </form>
-    <div class="featues-right">
+    <div class="featues-right-shop">
       <article class="featues-right-goods">
         <a href="#" class="featues-right-img">
-          <img src="img/barbershop-shop/featues-right-goods-1.jpg" width="150" height="100" alt="Набор для путешествий Baxter of California">
+          <img src="img/barbershop-shop/featues-right-goods-1.jpg" width="220" height="165" alt="Набор для путешествий Baxter of California">
         </a>
         <a href="#" class="featues-right-name">Набор для путешествий "Baxter of California"</a>
-        <div class="features-right-buy">
+        <div class="features-right-buy features-right-buy-shop clearfix">
           <span class="featues-right-goods-cost"> 2 900 руб.</span>
           <a href="#" class="btn featues-right-goods-buy">Купить</a>
         </div>     
       </article>
       <article class="featues-right-goods">
         <a href="#" class="featues-right-img">
-          <img src="img/barbershop-shop/featues-right-goods-2.jpg" width="150" height="100" alt="Увлажняющий кондиционер Baxter of California">
+          <img src="img/barbershop-shop/featues-right-goods-2.jpg" width="220" height="165" alt="Увлажняющий кондиционер Baxter of California">
         </a>
         <a href="#" class="featues-right-name">Увлажняющий кондиционер "Baxter of California"</a>
-        <div class="features-right-buy">
+        <div class="features-right-buy features-right-buy-shop clearfix">
           <span class="featues-right-goods-cost"> 750 руб.</span>
           <a href="#" class="btn featues-right-goods-buy">Купить</a>
         </div>
       </article>
       <article class="featues-right-goods">
         <a href="#" class="featues-right-img">
-          <img src="img/barbershop-shop/featues-right-goods-3.jpg" width="150" height="100" alt="Гель для волос Suavecito">
+          <img src="img/barbershop-shop/featues-right-goods-3.jpg" width="220" height="165" alt="Гель для волос Suavecito">
         </a>
         <a href="#" class="featues-right-name">Гель для волос "Suavecito"</a>
-        <div class="features-right-buy">
+        <div class="features-right-buy features-right-buy-shop clearfix">
           <span class="featues-right-goods-cost"> 290 руб.</span>
           <a href="#" class="btn featues-right-goods-buy">Купить</a>
         </div>
       </article>
       <article class="featues-right-goods">
         <a href="#" class="featues-right-img">
-          <img src="img/barbershop-shop/featues-right-goods-4.jpg" width="150" height="100" alt="Глина для укладки волос American crew">
+          <img src="img/barbershop-shop/featues-right-goods-4.jpg" width="220" height="165" alt="Глина для укладки волос American crew">
         </a>
         <a href="#" class="featues-right-name">Глина для укладки волос "American crew"</a>
-        <div class="features-right-buy">
+        <div class="features-right-buy features-right-buy-shop clearfix">
           <span class="featues-right-goods-cost"> 500 руб.</span>
           <a href="#" class="btn featues-right-goods-buy">Купить</a>
         </div>
       </article>
       <article class="featues-right-goods">
         <a href="#" class="featues-right-img">
-          <img src="img/barbershop-shop/featues-right-goods-5.jpg" width="150" height="100" alt="Гель для волос American crew">
+          <img src="img/barbershop-shop/featues-right-goods-5.jpg" width="220" height="165" alt="Гель для волос American crew">
         </a>
         <a href="#" class="featues-right-name">Гель для волос "American crew"</a>
-        <div class="features-right-buy">
+        <div class="features-right-buy features-right-buy-shop clearfix">
           <span class="featues-right-goods-cost"> 300 руб.</span>
           <a href="#" class="btn featues-right-goods-buy">Купить</a>
         </div>
       </article>
       <article class="featues-right-goods">
         <a href="#" class="featues-right-img">
-          <img src="img/barbershop-shop/featues-right-goods-6.jpg" width="150" height="100" alt="Набор ждя бритья Baxter of California">
+          <img src="img/barbershop-shop/featues-right-goods-6.jpg" width="220" height="165" alt="Набор ждя бритья Baxter of California">
         </a>
         <a href="#" class="featues-right-name">Набор ждя бритья "Baxter of California"</a>
-        <div class="features-right-buy">
+        <div class="features-right-buy features-right-buy-shop clearfix">
           <span class="featues-right-goods-cost"> 3 900 руб.</span>
           <a href="#" class="btn featues-right-goods-buy">Купить</a>
         </div>
@@ -157,25 +159,25 @@
   </div>
 </main>
 <footer class="main-footer">
-  <div class="main-footer-centerblock centerblock">
+  <div class="main-footer-centerblock centerblock clearfix">
     <section class="footer-contacts">
-      Барбершоп «Бородинский»<br>
-      Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-      <a href="#">Как нас найти?</a><br>
-      Телефон: +7 (812) 666-02-66
-    </section>
-    <section class="footer-social">
-      <p>Давайте дружить!</p>
-      <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-      <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-      <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-    </section>
-    <section class="footer-copyright">
-      <p>Разработано:</p>
-      <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-    </section>
-  </div>  
-</footer>
+        Барбершоп «Бородинский»<br>
+        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+        <a href="#">Как нас найти?</a><br>
+        Телефон: +7 (812) 666-02-66
+      </section>
+      <section class="footer-social">
+        <p>Давайте дружить!</p>
+        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+      </section>
+      <section class="footer-copyright">
+        <p>Разработано:</p>
+        <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+      </section>
+    </div>  
+  </footer>
 <script src="#"></script>
 </body>
 </html>
